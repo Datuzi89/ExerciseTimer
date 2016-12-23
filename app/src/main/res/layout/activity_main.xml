@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.xuezhu.exercisetimer.MainActivity">
+    <TextView
+        android:id="@+id/historyText"
+        android:text="HISTORY"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/saveText"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <EditText
+       android:id="@+id/secondText"
+       android:textSize="150sp"
+       android:text="@string/defaultSecond"
+       android:inputType="number"
+       android:hint="30"
+       android:layout_centerHorizontal="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/seconds"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/secondText"
+        android:layout_toRightOf="@+id/secondText"
+        android:layout_toEndOf="@+id/secondText"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/second" />
+    <EditText
+        android:id="@+id/roundText"
+        android:textSize="50sp"
+        android:text="@string/defaultRound"
+        android:inputType="number"
+        android:hint="10"
+        android:layout_below="@+id/secondText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/rounds"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roundText"
+        android:layout_toRightOf="@+id/roundText"
+        android:layout_toEndOf="@+id/roundText"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/round" />
+    <EditText
+        android:id="@+id/restText"
+        android:textSize="50sp"
+        android:text="@string/defaultRest"
+        android:inputType="number"
+        android:hint="60"
+        android:layout_below="@+id/roundText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/rest"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/restText"
+        android:layout_toRightOf="@+id/restText"
+        android:layout_toEndOf="@+id/restText"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/rest" />
+    <EditText
+        android:id="@+id/setText"
+        android:textSize="50sp"
+        android:text="@string/defaultSet"
+        android:inputType="number"
+        android:hint="3"
+        android:layout_below="@+id/restText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/sets"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setText"
+        android:layout_toRightOf="@+id/setText"
+        android:layout_toEndOf="@+id/setText"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/set" />
+    <Button
+        android:id="@+id/startButton"
+        android:textColor="#ff0000"
+        android:text="Start"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ <LinearLayout
+     android:layout_below="@+id/startButton"
+     android:orientation="horizontal"
+     android:weightSum="2"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+  <Button
+      android:id="@+id/stopButton"
+      android:padding="5dp"
+      android:textSize="30sp"
+      android:text="Stop"
+      android:layout_weight="1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <Button
+      android:id="@+id/pauseButton"
+      android:padding="5dp"
+      android:textSize="30sp"
+      android:text="Pause"
+      android:layout_weight="1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+ </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:weightSum="4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/secondHistory"
+        android:text="@string/seconds"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/roundsHistory"
+        android:text="@string/rounds"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@id/secondHistory"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/restHistory"
+        android:text="@string/rest"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@id/roundsHistory"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/setHistory"
+        android:text="@string/sets"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@id/restHistory"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/hasChild"
+        android:text=">"
+        android:textSize="35sp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
